@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: diceroller-api
+  namespace: jamaica
+  name: diceroller-api
+spec:
+  type: ClusterIP
+  selector:
+    app: diceroller-api
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP

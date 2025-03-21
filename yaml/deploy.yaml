@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diceroller-api
+  labels:
+    app: diceroller-api
+  namespace: jamaica
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: diceroller-api
+  template:
+    metadata:
+      labels:
+        app: diceroller-api
+    spec:
+      containers:
+        - image: tororomeshi/diceroller-api:latest
+          name: diceroller-api
+          imagePullPolicy: Always
+          # securityContext:
+          #   runAsUser: 1000
+          #   runAsNonRoot: true
+          tty: true
+          ports:
+            - containerPort: 8080
+              name: diceroller-api

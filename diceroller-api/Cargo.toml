@@ -1,0 +1,12 @@
+[package]
+name = "diceroller-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.4.1"
+rand = "0.9.0"
+regex = "1.11.1"
+log = "0.4"
+env_logger = "0.11.7"
+once_cell = "1.17.1"
