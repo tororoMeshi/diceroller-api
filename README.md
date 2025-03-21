@@ -31,7 +31,6 @@ JSON 形式で出目を返します。
 - Rust (edition 2021)
 - Docker（コンテナ化用）
 - Kubernetes（オプション：クラスタへのデプロイ用）
-- GitHub Actions（オプション：CI/CD用）
 
 ### ローカルでのビルド・実行
 
