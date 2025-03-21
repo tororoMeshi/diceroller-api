@@ -21,9 +21,6 @@ JSON 形式で出目を返します。
 - **Kubernetes 用マニフェスト**  
   デプロイ用およびサービス用の YAML ファイルを用意しています。
 
-- **CI/CD 対応**  
-  GitHub Actions などを用いた自動テスト／自動デプロイの構築が可能です。
-
 ## Getting Started
 
 ### 前提条件
